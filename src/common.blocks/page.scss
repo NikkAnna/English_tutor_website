@@ -6,12 +6,13 @@ html, body.page {
 	font-size: $baseFontSize;
 	color: $baseFontColor;
 	background: $background;
+	margin: 0;
+	padding: 0;
 }
 
 .page__wrapper {
-	width: 100%;
-
-	&_locked {
-		position: fixed;
-	}
+	padding: 0 2%;
+	// &_locked {
+	// 	position: fixed;
+	// }
 }
