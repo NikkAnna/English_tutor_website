@@ -1,0 +1,58 @@
+@use "variables" as *;
+
+.my-work {
+    height: 90vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 20vh 70vh;
+    padding: 0 3%;
+
+    &__title {
+        align-self: center;
+    }
+
+    &__list {
+        list-style: none;
+        margin: 0;
+        display: grid;
+        grid-template-columns: repeat(3, 30%);
+        column-gap: 5%;
+        padding: 0;
+
+
+        &-item {
+            height: clamp(15.625rem, 7.5893rem + 17.8571vw, 34.375rem);
+            background: no-repeat url('../images/photo.jpg') top left / cover;
+            position: relative;
+            transition: transform 0.2s ease-in-out;
+            border-radius: 7%;
+
+            &::after {
+                content: '';
+                background: $gradientColor;
+                position: absolute;
+                inset: 0;
+                width: 100%;
+                height: 100%;
+                opacity: 75%;
+                border-radius: 7%;
+            }
+
+            &:hover {
+                transform: scale(1.02);
+            }
+        }
+    }
+
+    &__textblock {
+        margin: 0;
+        color: $lightcolor;
+        z-index: 5;
+        position: relative;
+        font-size: $listFontSize;
+        font-family: $additionalFont;
+        padding: 5% 5%;
+        font-weight: 500;
+
+    }
+}

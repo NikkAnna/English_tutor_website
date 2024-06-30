@@ -9,13 +9,19 @@
 
 @use "../common.blocks/page";
 @use "../common.blocks/header";
-
 @use "../common.blocks/title";
-// @use "../common.blocks/card";
-// @use "../common.blocks/basket";
-// @use "../common.blocks/order";
-// @use "../common.blocks/order-success";
-
+@use "../common.blocks/about";
+@use "../common.blocks/heading";
+@use "../common.blocks/my-work";
+@use "../common.blocks/feedback";
+@use "../common.blocks/carousel";
+@use "../common.blocks/form";
+@use "../common.blocks/contacts-form";
+@use "../common.blocks/contact-me";
+@use "../common.blocks/footer";
+@use "../common.blocks/sale-button";
+@use "../common.blocks/animations";
+@use "../common.blocks/is-animated";
 
 @use "variables" as *;
 // @use "mixins";

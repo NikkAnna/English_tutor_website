@@ -1,0 +1,25 @@
+@use "variables" as *;
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.footer {
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2%;
+    font-size: $menuFontSize;
+
+    &__copyright {
+        display: flex;
+        align-items: center;
+    }
+
+    &__icon {
+        width: 20px;
+        height: 20px;
+    }
+}

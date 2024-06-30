@@ -1,0 +1,29 @@
+@use "variables" as *;
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+.sale-button {
+    padding: 7px 10px;
+    // outline: 5px solid black;
+    border-radius: 8px;
+    // background-color: $baseFontColor;
+    color: $lightcolor;
+    // box-shadow: 0 0 1px 3px linear-gradient(273deg, #000000, #342525, #cc7e7c);
+    transition: 0.3 ease;
+    background: $buttonGradient;
+    background-size: 600% 600%;
+    animation: gradientButton 5s ease infinite;
+
+
+    &:hover {
+        background: $hover;
+        box-shadow: 0 0 3px 3px $hover;
+        outline: 1px solid $hover;
+        transform: scale(1.1);
+        color: $lightcolor;
+    }
+}

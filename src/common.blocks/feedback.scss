@@ -1,0 +1,15 @@
+@use "variables" as *;
+
+
+.feedback {
+    height: 90vh;
+    background: $primary;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 30vh 60vh;
+    padding: 0 3%;
+
+    &__title {
+        align-self: center;
+    }
+}

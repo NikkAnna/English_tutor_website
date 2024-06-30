@@ -1,5 +1,28 @@
 import './scss/styles.scss';
 
+document.addEventListener('DOMContentLoaded', function() {
+    const animatedBlocks = document.querySelectorAll('.animated');
+ 
+    function checkBlocksVisibility() {
+        const windowHeight = window.innerHeight;
+ 
+        animatedBlocks.forEach((block) => {
+            const blockPosition = block.getBoundingClientRect().top;
+ 
+            if (blockPosition <= windowHeight - 100) {
+                block.classList.remove('is-animated');
+                block.classList.add('animated-params');
+            }
+        });
+    }
+ 
+    checkBlocksVisibility();
+ 
+    window.addEventListener('scroll', function() {
+        checkBlocksVisibility();
+    });
+});
+
 // import { API_URL, CDN_URL, settings } from './utils/constants';
 // import { cloneTemplate, ensureElement } from './utils/utils';
 

@@ -1,25 +1,32 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playwrite+RO:wght@100..400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=LXGW+WenKai+Mono+TC&display=swap');
 
 $background: #FFF4F3;
 $primary: #F0DDDC;
 $hover: #CC7E7C;
+$lightcolor: #fff;
+$gradientColor: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(52,37,37,1) 54%, rgba(240,221,220,1) 100%);
+$buttonGradient: linear-gradient(273deg, #342525, #cc7e7c);
+
 
 $font: "Montserrat", sans-serif;
 $cursiveFont: "Great Vibes", cursive;
-// $fontMono: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+$additionalFont: "LXGW WenKai Mono TC", monospace;
 $baseFontSize: 20px;
 $baseFontColor: #342525;
 
 
-$menuFontSize: clamp(0.5rem, 0.4013rem + 0.3158vw, 0.875rem);
+$menuFontSize: clamp(0.5rem, 0.1786rem + 0.7143vw, 1.25rem);
 $logoFontSize: clamp(0.75rem, 0.4539rem + 0.9474vw, 1.875rem);
-$mainHeadingFontSize: clamp(2.8125rem, 1.3393rem + 3.2738vw, 6.25rem);
+$mainHeadingFontSize: clamp(2.8125rem, 1.0714rem + 3.869vw, 6.875rem);
 $quoteFontSize: clamp(1.25rem, 0.7566rem + 1.5789vw, 3.125rem);
+$listFontSize: clamp(0.75rem, 0.5357rem + 0.4762vw, 1.25rem);
+$headingFontSize: clamp(1.25rem, 0.9821rem + 0.5952vw, 1.875rem);
 
-
-
-
+$carouselSwitcher: clamp(1.875rem, 0.8036rem + 2.381vw, 4.375rem);
+$form: clamp(18.75rem, 10.7143rem + 17.8571vw, 37.5rem);
+$icons: clamp(6.25rem, 3.5714rem + 5.9524vw, 12.5rem);
 
 // $secondary: white;
 // $primaryLight: #1E334F;

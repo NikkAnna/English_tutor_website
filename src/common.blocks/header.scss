@@ -6,12 +6,14 @@
     top: 0;
     left: 0;
     width: 100%;
+    z-index: 9;
     
     &__container {
         display: flex;
         justify-content: space-between;
         align-items: center;
         padding: 5px 3%;
+        height: 6vh;
     }
 
     &__logo {
@@ -24,16 +26,18 @@
     &__menu-list {
         display: flex;
         justify-content: space-between;
+        align-items: center;
         gap: 20px;
         list-style: none;
         font-size: $menuFontSize;
+        padding: 0;
 
         &-item {
             transition: color 0.1s;
             position: relative;
             
          
-            &::after {
+            &:not(:nth-of-type(5))::after {
                 content: '';
                 position: absolute;
                 background: $hover;
@@ -41,7 +45,7 @@
                 height: 1px;
                 bottom: 0;
                 left: 0;
-                z-index: 2;
+                z-index: 10;
                 transition: transform 0.5s ease-in-out;
                 transform-origin: right 100%;
                 transform: scaleX(0);
@@ -55,6 +59,11 @@
                     transform: scaleX(1);
                 }
             }
+        }
+
+        &-link {
+            color: inherit;
+            text-decoration: none;
         }
     }
 }

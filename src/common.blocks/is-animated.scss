@@ -1,0 +1,11 @@
+
+.is-animated {
+    opacity: 0;
+    transform: translateY(100px);
+}
+
+.animated-params {
+    opacity: 1;
+    transform: translateY(0);
+    transition: 1.5s ease;
+}

@@ -21,12 +21,18 @@
 				</a>
 				<nav class="header__menu">
 					<ul class="header__menu-list">
-						<li class="header__menu-list-item">обо мне</li>
-						<li class="header__menu-list-item">как я работаю</li>
-						<li class="header__menu-list-item">мои ученики</li>
-						<li class="header__menu-list-item">мои научные работы</li>
-						<li class="header__menu-list-item">хочу учиться!</li>
-						<li class="header__menu-list-item">мои контакты</li>
+						<li class="header__menu-list-item">
+							<a class="header__menu-list-link" href="#about">обо мне</a></li>
+						<li class="header__menu-list-item">
+							<a class="header__menu-list-link" href="#my-work">как я работаю</a></li>
+						<li class="header__menu-list-item">
+							<a class="header__menu-list-link" href="#feedback">мои ученики</a></li>
+						<li class="header__menu-list-item">
+							<a class="header__menu-list-link" href="#education">мои научные работы</a></li>
+						<li class="header__menu-list-item sale-button">
+							<a class="header__menu-list-link" href="#contacts-form">записаться ко мне!</a></li>
+						<li class="header__menu-list-item">
+							<a class="header__menu-list-link" href="#contact-me">мои контакты</a></li>
 					</ul>
 				</nav>
 			</div>
@@ -34,84 +40,192 @@
 		<div class="page__wrapper">
 			<main class="main">
 				<section class="title">
-					<h1 class="title__textblock">Nice to meet you!<br>Меня зовут Светлана и я твой комфортный репетитор по английскому языку</h1>
-					<blockquote class="title__blockquote">
+					<h1 class="title__textblock animated is-animated">Nice to meet you!<br>Меня зовут Светлана и я твой комфортный репетитор по английскому языку</h1>
+					<!-- svg анимашка -->
+					<blockquote class="title__blockquote animated is-animated">
 						<p class="title__blockquote-text">
-						<span>«</span>Я знаю, как трудно начать учить язык, особенно во взрослом возрасте, поэтому для своих учеников я не только учитель, но и психолог, друг и их личный мотиватор<span>»</span>
+							<span class="title__blockquote-quote">« </span><span class="title__blockquote-textbox">Я знаю, как трудно начать учить язык, особенно во взрослом возрасте, поэтому для своих учеников я не только учитель, но и психолог, друг и их личный мотиватор</span><span class="title__blockquote-quote"> »</span>
 						</p>
 					</blockquote>
 				</section>
-				<section class="about">
-					<img src="" alt="Фото девушки репетитора">
-					<ul class="about__list">
+				<section class="about" id="about">
+					<img 
+						src="<%=require('../images/photo1.jpg')%>"
+						alt="Фото девушки репетитора" 
+						class="about__image">
+					<h2 class="about__title heading animated is-animated">Немного обо мне</h2>
+					<ul class="about__list animate animated is-animated">
 						<li class="about__list-item">Я - дипломированный педагог (окончила Московский городской педагогический университет)</li>
 						<li class="about__list-item">Более 10 лет изучаю английский язык</li>
 						<li class="about__list-item">Более 3 лет работаю в сфере репетиторства</li>
 						<li class="about__list-item">Имею опыт работы с учениками разных возрастов</li>
 					</ul>
 				</section>
-				<section class="my-work">
-					<h2 class="my-work__title">Как будут проходить наши занятия:</h2>
-					<ul class="my-work__list">
-						<li class="my-work__list-item">Мы будем заниматься на онлайн платформе ProgressMe</li>
-						<li class="my-work__list-item">Интерактивная форма работы, активное говорение, включая обсуждение сериала на каждом занятии</li>
-						<li class="my-work__list-item">Стоимость 1.5 часового занятия - 1 400 рублей</li>
+				<section class="my-work" id="my-work">
+					<h2 class="my-work__title heading animated is-animated">Как будут проходить наши занятия:</h2>
+					<ul class="my-work__list animated is-animated">
+						<li class="my-work__list-item">
+							<p class="my-work__textblock">Мы будем заниматься на онлайн платформе ProgressMe</p>
+						</li>
+						<li class="my-work__list-item">
+							<p class="my-work__textblock">Интерактивная форма работы, активное говорение, включая обсуждение сериала на каждом занятии</p>
+						</li>
+						<li class="my-work__list-item">
+							<p class="my-work__textblock">Стоимость 1.5 часового занятия - 1&nbsp;400&nbsp;рублей</p>
+						</li>
 					</ul>
 				</section>
-				<section class="feedback">
-					<ul class="feedback__list">
-						<li class="feedback__list-item">Спасибо, Света! Благодаря нашим занятиям, я начала лучше разговаривать на английском и писать на английском, а также, теперь мне легче читать комиксы в оригинале и я реже лезу в переводчик. Мы закрыли огромную брешь в моем знании времен. Ты очень терпеливо и доходчиво все объясняешь, поэтому уроки с тобой очень комфортные. Я рада, что начала заниматься английским с тобой!</li>
-						<li class="feedback__list-item">Веселый преподаватель, вместе с которым я окунулся в пучину английского языка. Вместе с ней я прошел дебри множества учебников и даже писал ЕГЭ по английскому для 11 класса в свои 29 лет. Педагог, который постоянно находит и предлагает что-то новое и интересное для моего обучения!</li>
-					</ul>
+				<section class="feedback" id="feedback">
+					<h2 class="feedback__title heading animated is-animated">Отзывы моих любимых учеников</h2>
+					<article class="carousel animated is-animated">
+						<button type="button" class="carousel__switcher">
+							<svg class="carousel__switcher-image" width="800px" height="800px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<g id="SVGRepo_bgCarrier" stroke-width="0"/>
+								<g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/>
+								<g id="SVGRepo_iconCarrier">
+								<path fill-rule="evenodd" clip-rule="evenodd" d="M22 12c0 5.523-4.477 10-10 10S2 17.523 2 12 6.477 2 12 2s10 4.477 10 10Zm-8.293-3.293a1 1 0 0 0-1.414-1.414l-4 4a1 1 0 0 0 0 1.414l4 4a1 1 0 0 0 1.414-1.414L10.414 12l3.293-3.293Z" fill="#342525"/>
+								</g>
+							</svg>
+						</button>
+						<ul class="carousel__list">
+							<li class="carousel__list-item">
+								<img 
+									class="carousel__image" 
+									src="<%=require('../images/photo1.jpg')%>" 
+									alt=""
+								>
+								<p class="carousel__name">Даша</p>
+								<p class="carousel__text">Спасибо, Света! Благодаря нашим занятиям, я начала лучше разговаривать на английском и писать на английском, а также, теперь мне легче читать комиксы в оригинале и я реже лезу в переводчик. Мы закрыли огромную брешь в моем знании времен. Ты очень терпеливо и доходчиво все объясняешь, поэтому уроки с тобой очень комфортные. Я рада, что начала заниматься английским с тобой!</p>
+							</li>
+							<!-- <li class="feedback__list-item">Веселый преподаватель, вместе с которым я окунулся в пучину английского языка. Вместе с ней я прошел дебри множества учебников и даже писал ЕГЭ по английскому для 11 класса в свои 29 лет. Педагог, который постоянно находит и предлагает что-то новое и интересное для моего обучения!</li> -->
+						</ul>
+						<button type="button" class="carousel__switcher">
+							<svg class="carousel__switcher-image" width="800px" height="800px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="none">
+								<g id="SVGRepo_bgCarrier" stroke-width="0"/>
+								<g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/>
+								<g id="SVGRepo_iconCarrier">
+								<path fill="#342525" fill-rule="evenodd" d="M12 21a9 9 0 1 0 0-18 9 9 0 0 0 0 18zM10.293 9.707a1 1 0 1 1 1.414-1.414l3 3a1 1 0 0 1 0 1.414l-3 3a1 1 0 0 1-1.414-1.414L12.586 12l-2.293-2.293z" clip-rule="evenodd"/>
+								</g>
+							</svg>
+						</button>
+					</article>
 				</section>
-				<section class="education">
+				<section class="education" id="education">
 
 				</section>
-				<section class="contacts-form">
-					<form class="form" name="contacts">
-						<h2 class="form__title">Для записи на занятия оставьте свои контакты и я свяжусь с вами:</h2>
+				<section class="contacts-form" id="contacts-form">
+					<h2 class="contacts-form__title heading animated is-animated">Для записи на занятия оставьте свои<br>контакты и я свяжусь с вами</h2>
+					<form class="form animated is-animated" name="contacts">
 						<div class="form__main">
 							<label class="form__field">
-								<span class="form__label contacts__title">Оставьте свой номер телефона</span>
+								<span class="form__label contacts__title">Имя:</span>
+								<input name="name" class="form__input" type="text" placeholder="Введите ваше имя и фамилию" />
+							</label>
+							<label class="form__field">
+								<span class="form__label contacts__title">Номер телефона:</span>
 								<input name="phone" class="form__input" type="tel" placeholder="+7 (" />
 							</label>
+							<label class="form__field">
+								<span class="form__label contacts__title">Email:</span>
+								<input name="email" class="form__input" type="email" placeholder="example@mail.ru" />
+							</label>
 						</div>
-						<label class="form__field">
-							<span class="form__label contacts__title">Оставьте свой email</span>
-							<input name="email" class="form__input" type="email" placeholder="Введите Email" />
-						</label>
 						<div class="form__actions">
-							<button type="submit" disabled class="button">Отправить</button>
+							<button type="submit" class="form__button" >Отправить</button>
 							<span class="form__errors"></span>
 						</div>
 					</form>
 				</section>
-				<section class="contact-me">
-					<h2 class="contact-me__title">Со мной можно связаться:</h2>
-					<ul class="contact-me__list">
+				<section class="contact-me" id="contact-me">
+					<h2 class="contact-me__title heading animated is-animated">Мои контакты</h2>
+					<p class="contact-me__subtitle animated is-animated">Если у вас возникли вопросы, свяжитесь<br>со мной любым удобным для вас способом:</p>
+					<ul class="contact-me__list animated is-animated">
 						<li class="contact-me__list-item">
-							<img src="" alt="">
-							<span>Telegram</span>
+							<a class="contact-me__link" href="/">
+								<button type="button" class="contact-me__button">
+									<svg class="contact-me__icon" fill="#fff" width="800px" height="800px" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" stroke="#fff">
+										<g id="SVGRepo_bgCarrier" stroke-width="0"/>
+										<g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/>
+										<g id="SVGRepo_iconCarrier">
+										<path d="M 26.070313 3.996094 C 25.734375 4.011719 25.417969 4.109375 25.136719 4.21875 L 25.132813 4.21875 C 24.847656 4.332031 23.492188 4.902344 21.433594 5.765625 C 19.375 6.632813 16.703125 7.757813 14.050781 8.875 C 8.753906 11.105469 3.546875 13.300781 3.546875 13.300781 L 3.609375 13.277344 C 3.609375 13.277344 3.25 13.394531 2.875 13.652344 C 2.683594 13.777344 2.472656 13.949219 2.289063 14.21875 C 2.105469 14.488281 1.957031 14.902344 2.011719 15.328125 C 2.101563 16.050781 2.570313 16.484375 2.90625 16.722656 C 3.246094 16.964844 3.570313 17.078125 3.570313 17.078125 L 3.578125 17.078125 L 8.460938 18.722656 C 8.679688 19.425781 9.949219 23.597656 10.253906 24.558594 C 10.433594 25.132813 10.609375 25.492188 10.828125 25.765625 C 10.933594 25.90625 11.058594 26.023438 11.207031 26.117188 C 11.265625 26.152344 11.328125 26.179688 11.390625 26.203125 C 11.410156 26.214844 11.429688 26.21875 11.453125 26.222656 L 11.402344 26.210938 C 11.417969 26.214844 11.429688 26.226563 11.441406 26.230469 C 11.480469 26.242188 11.507813 26.246094 11.558594 26.253906 C 12.332031 26.488281 12.953125 26.007813 12.953125 26.007813 L 12.988281 25.980469 L 15.871094 23.355469 L 20.703125 27.0625 L 20.8125 27.109375 C 21.820313 27.550781 22.839844 27.304688 23.378906 26.871094 C 23.921875 26.433594 24.132813 25.875 24.132813 25.875 L 24.167969 25.785156 L 27.902344 6.65625 C 28.007813 6.183594 28.035156 5.742188 27.917969 5.3125 C 27.800781 4.882813 27.5 4.480469 27.136719 4.265625 C 26.769531 4.046875 26.40625 3.980469 26.070313 3.996094 Z M 25.96875 6.046875 C 25.964844 6.109375 25.976563 6.101563 25.949219 6.222656 L 25.949219 6.234375 L 22.25 25.164063 C 22.234375 25.191406 22.207031 25.25 22.132813 25.308594 C 22.054688 25.371094 21.992188 25.410156 21.667969 25.28125 L 15.757813 20.75 L 12.1875 24.003906 L 12.9375 19.214844 C 12.9375 19.214844 22.195313 10.585938 22.59375 10.214844 C 22.992188 9.84375 22.859375 9.765625 22.859375 9.765625 C 22.886719 9.3125 22.257813 9.632813 22.257813 9.632813 L 10.082031 17.175781 L 10.078125 17.15625 L 4.242188 15.191406 L 4.242188 15.1875 C 4.238281 15.1875 4.230469 15.183594 4.226563 15.183594 C 4.230469 15.183594 4.257813 15.171875 4.257813 15.171875 L 4.289063 15.15625 L 4.320313 15.144531 C 4.320313 15.144531 9.53125 12.949219 14.828125 10.71875 C 17.480469 9.601563 20.152344 8.476563 22.207031 7.609375 C 24.261719 6.746094 25.78125 6.113281 25.867188 6.078125 C 25.949219 6.046875 25.910156 6.046875 25.96875 6.046875 Z"/>
+										</g>
+									</svg>
+								</button>
+							</a>
 						</li>
 						<li class="contact-me__list-item">
-							<img src="" alt="">
-							<span>WhatsApp</span>
+							<a class="contact-me__link" href="/">
+								<button type="button" class="contact-me__button">
+									<svg class="contact-me__icon" fill="#fff" width="800px" height="800px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" stroke="#fff">
+										<g id="SVGRepo_bgCarrier" stroke-width="0"/>
+										<g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/>
+										<g id="SVGRepo_iconCarrier"> <title>whatsapp</title> <path d="M26.576 5.363c-2.69-2.69-6.406-4.354-10.511-4.354-8.209 0-14.865 6.655-14.865 14.865 0 2.732 0.737 5.291 2.022 7.491l-0.038-0.070-2.109 7.702 7.879-2.067c2.051 1.139 4.498 1.809 7.102 1.809h0.006c8.209-0.003 14.862-6.659 14.862-14.868 0-4.103-1.662-7.817-4.349-10.507l0 0zM16.062 28.228h-0.005c-0 0-0.001 0-0.001 0-2.319 0-4.489-0.64-6.342-1.753l0.056 0.031-0.451-0.267-4.675 1.227 1.247-4.559-0.294-0.467c-1.185-1.862-1.889-4.131-1.889-6.565 0-6.822 5.531-12.353 12.353-12.353s12.353 5.531 12.353 12.353c0 6.822-5.53 12.353-12.353 12.353h-0zM22.838 18.977c-0.371-0.186-2.197-1.083-2.537-1.208-0.341-0.124-0.589-0.185-0.837 0.187-0.246 0.371-0.958 1.207-1.175 1.455-0.216 0.249-0.434 0.279-0.805 0.094-1.15-0.466-2.138-1.087-2.997-1.852l0.010 0.009c-0.799-0.74-1.484-1.587-2.037-2.521l-0.028-0.052c-0.216-0.371-0.023-0.572 0.162-0.757 0.167-0.166 0.372-0.434 0.557-0.65 0.146-0.179 0.271-0.384 0.366-0.604l0.006-0.017c0.043-0.087 0.068-0.188 0.068-0.296 0-0.131-0.037-0.253-0.101-0.357l0.002 0.003c-0.094-0.186-0.836-2.014-1.145-2.758-0.302-0.724-0.609-0.625-0.836-0.637-0.216-0.010-0.464-0.012-0.712-0.012-0.395 0.010-0.746 0.188-0.988 0.463l-0.001 0.002c-0.802 0.761-1.3 1.834-1.3 3.023 0 0.026 0 0.053 0.001 0.079l-0-0.004c0.131 1.467 0.681 2.784 1.527 3.857l-0.012-0.015c1.604 2.379 3.742 4.282 6.251 5.564l0.094 0.043c0.548 0.248 1.25 0.513 1.968 0.74l0.149 0.041c0.442 0.14 0.951 0.221 1.479 0.221 0.303 0 0.601-0.027 0.889-0.078l-0.031 0.004c1.069-0.223 1.956-0.868 2.497-1.749l0.009-0.017c0.165-0.366 0.261-0.793 0.261-1.242 0-0.185-0.016-0.366-0.047-0.542l0.003 0.019c-0.092-0.155-0.34-0.247-0.712-0.434z"/> </g>
+									</svg>
+								</button>
+							</a>
 						</li>
 						<li class="contact-me__list-item">
-							<img src="" alt="">
-							<span>Photogram</span>
+							<a class="contact-me__link" href="/">
+								<button type="button" class="contact-me__button">
+									<svg class="contact-me__icon" fill="#fff" width="800px" height="800px" viewBox="0 0 32 32" id="Camada_1" version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" stroke="#fff">
+										<g id="SVGRepo_bgCarrier" stroke-width="0"/>
+										<g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/>
+										<g id="SVGRepo_iconCarrier"> <g> <path d="M22.3,8.4c-0.8,0-1.4,0.6-1.4,1.4c0,0.8,0.6,1.4,1.4,1.4c0.8,0,1.4-0.6,1.4-1.4C23.7,9,23.1,8.4,22.3,8.4z"/> <path d="M16,10.2c-3.3,0-5.9,2.7-5.9,5.9s2.7,5.9,5.9,5.9s5.9-2.7,5.9-5.9S19.3,10.2,16,10.2z M16,19.9c-2.1,0-3.8-1.7-3.8-3.8 c0-2.1,1.7-3.8,3.8-3.8c2.1,0,3.8,1.7,3.8,3.8C19.8,18.2,18.1,19.9,16,19.9z"/> <path d="M20.8,4h-9.5C7.2,4,4,7.2,4,11.2v9.5c0,4,3.2,7.2,7.2,7.2h9.5c4,0,7.2-3.2,7.2-7.2v-9.5C28,7.2,24.8,4,20.8,4z M25.7,20.8 c0,2.7-2.2,5-5,5h-9.5c-2.7,0-5-2.2-5-5v-9.5c0-2.7,2.2-5,5-5h9.5c2.7,0,5,2.2,5,5V20.8z"/> </g> </g>
+									</svg>
+								</button>
+							</a>
 						</li>
 						<li class="contact-me__list-item">
-							<img src="" alt="">
-							<span>По телефону</span>
+							<a class="contact-me__link" href="/">
+								<button type="button" class="contact-me__button">
+									<svg  class="contact-me__icon" width="800px" height="800px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="#fff">
+										<g id="SVGRepo_bgCarrier" stroke-width="0"/>
+										<g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/>
+										<g id="SVGRepo_iconCarrier"> <path d="M5.13641 12.764L8.15456 9.08664C8.46255 8.69065 8.61655 8.49264 8.69726 8.27058C8.76867 8.07409 8.79821 7.86484 8.784 7.65625C8.76793 7.42053 8.67477 7.18763 8.48846 6.72184L7.77776 4.9451C7.50204 4.25579 7.36417 3.91113 7.12635 3.68522C6.91678 3.48615 6.65417 3.35188 6.37009 3.29854C6.0477 3.238 5.68758 3.32804 4.96733 3.5081L3 4C3 14 9.99969 21 20 21L20.4916 19.0324C20.6717 18.3121 20.7617 17.952 20.7012 17.6296C20.6478 17.3456 20.5136 17.0829 20.3145 16.8734C20.0886 16.6355 19.7439 16.4977 19.0546 16.222L17.4691 15.5877C16.9377 15.3752 16.672 15.2689 16.4071 15.2608C16.1729 15.2536 15.9404 15.3013 15.728 15.4001C15.4877 15.512 15.2854 15.7143 14.8807 16.119L11.8274 19.1733M12.9997 7C13.9765 7.19057 14.8741 7.66826 15.5778 8.37194C16.2815 9.07561 16.7592 9.97326 16.9497 10.95M12.9997 3C15.029 3.22544 16.9213 4.13417 18.366 5.57701C19.8106 7.01984 20.7217 8.91101 20.9497 10.94" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/> </g>
+									</svg>
+								</button>
+							</a>
+						</li>
+						<li class="contact-me__list-item">
+							<a class="contact-me__link" href="/">
+								<button type="button" class="contact-me__button">
+									<svg class="contact-me__icon" width="800px" height="800px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="#fff">
+										<g id="SVGRepo_bgCarrier" stroke-width="0"/>
+										<g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/>
+										<g id="SVGRepo_iconCarrier"> <path fill-rule="evenodd" clip-rule="evenodd" d="M3.75 5.25L3 6V18L3.75 18.75H20.25L21 18V6L20.25 5.25H3.75ZM4.5 7.6955V17.25H19.5V7.69525L11.9999 14.5136L4.5 7.6955ZM18.3099 6.75H5.68986L11.9999 12.4864L18.3099 6.75Z" fill="#fff"/> </g>
+									</svg>
+								</button>
+							</a>
 						</li>
 					</ul>
 				</section>
 			</main>
 		</div>
 		<footer class="footer">
-			<p class="footer__text">Copyright text comes here</p>
+			<div class="footer__copyright">
+				<svg class="footer__icon" fill="#342525" width="800px" height="800px" viewBox="-6 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" stroke="#342525" stroke-width="0.00032">
+					<g id="SVGRepo_bgCarrier" stroke-width="0"/>
+					<g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/>
+					<g id="SVGRepo_iconCarrier"> <title>copyright</title> <path d="M9.76 21.68c-1.52 0-2.96-0.6-4.040-1.68-2.24-2.24-2.24-5.84 0-8.040 1.080-1.080 2.52-1.68 4.040-1.68v0c1.52 0 2.96 0.6 4.040 1.68 0.32 0.32 0.32 0.84 0 1.2-0.32 0.32-0.84 0.32-1.2 0-0.76-0.76-1.76-1.16-2.84-1.16v0c-1.080 0-2.080 0.4-2.84 1.16-1.56 1.56-1.56 4.12 0 5.68 0.76 0.76 1.76 1.16 2.84 1.16s2.080-0.4 2.84-1.16c0.32-0.32 0.84-0.32 1.2 0 0.32 0.32 0.32 0.84 0 1.2-1.12 1.080-2.52 1.64-4.040 1.64zM9.76 25.76c-5.4 0-9.76-4.4-9.76-9.76s4.36-9.76 9.76-9.76c5.36 0 9.76 4.36 9.76 9.76s-4.4 9.76-9.76 9.76zM9.76 7.92c-4.44 0-8.080 3.6-8.080 8.080s3.6 8.080 8.080 8.080c4.44 0 8.080-3.6 8.080-8.080s-3.6-8.080-8.080-8.080z"/> </g>
+				</svg>
+				<p class="footer__text">Все права защищены</p>
+			</div>
 			<p class="footer__text">Made by A.S.Studio</p>
 		</footer>
+
+
+		<template id="caroisel">
+			<li class="carousel__list-item">
+				<img 
+					class="carousel__image" 
+					src="<%=require('../images/photo1.jpg')%>" 
+					alt=""
+				>
+				<p class="carousel__name">Даша</p>
+				<p class="carousel__text">Спасибо, Света! Благодаря нашим занятиям, я начала лучше разговаривать на английском и писать на английском, а также, теперь мне легче читать комиксы в оригинале и я реже лезу в переводчик. Мы закрыли огромную брешь в моем знании времен. Ты очень терпеливо и доходчиво все объясняешь, поэтому уроки с тобой очень комфортные. Я рада, что начала заниматься английским с тобой!</p>
+			</li>
+		</template>
 	</body>
 </html>
+
+

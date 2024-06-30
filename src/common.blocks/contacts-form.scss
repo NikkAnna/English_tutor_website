@@ -1,0 +1,17 @@
+@use "variables" as *;
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+.contacts-form {
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 30vh 70vh;
+
+    &__title {
+        align-self: center;
+    }
+}
