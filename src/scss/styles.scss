@@ -22,6 +22,9 @@
 @use "../common.blocks/sale-button";
 @use "../common.blocks/animations";
 @use "../common.blocks/is-animated";
+@use "../common.blocks/fade";
+
 
 @use "variables" as *;
 // @use "mixins";
+* {box-sizing:border-box}

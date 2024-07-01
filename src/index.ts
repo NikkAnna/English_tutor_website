@@ -23,6 +23,52 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
+let slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n: number) {
+    showSlides(slideIndex += n);
+  }
+  
+const switchers = document.querySelectorAll('.carousel__switcher');
+
+switchers.forEach((switcher) => {
+    switcher.addEventListener('click', () => {
+        plusSlides(1);
+    })
+})
+
+function showSlides(n: number) {
+    let i = 0;
+    const slides = document.querySelectorAll(".carousel__list-item");
+    // var dots = document.getElementsByClassName("dot");
+    if (n > slides.length) {
+        slideIndex = 1
+    }
+    if (n < 1) {
+        slideIndex = slides.length
+    }
+    for (i = 0; i < slides.length; i++) {
+        slides[i].classList.add('is_hidden');
+    }
+    // for (i = 0; i < dots.length; i++) {
+    //     dots[i].className = dots[i].className.replace(" active", "");
+    // }
+    slides[slideIndex-1].classList.remove('is_hidden');
+    // dots[slideIndex-1].className += " active";
+  }
+
+
+
+
+// // Thumbnail image controls
+// function currentSlide(n) {
+//   showSlides(slideIndex = n);
+// }
+
+
+
 // import { API_URL, CDN_URL, settings } from './utils/constants';
 // import { cloneTemplate, ensureElement } from './utils/utils';
 

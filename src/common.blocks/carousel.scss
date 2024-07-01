@@ -10,6 +10,7 @@
     grid-template-columns: 20% 60% 20%;
     align-items: center;
     align-self: start;
+    transition: 1s ease;
 
     &__switcher {
         border: none;
@@ -29,12 +30,15 @@
 
     &__list {
         list-style: none;
+        
+        align-content: center;
     }
 
     &__list-item {
         background: $lightcolor;
         box-shadow: 0 0 10px 5px $background;
-        transition: 0.8s ease;
+        height: 300px;
+        transition: 1s ease;
         display: grid;
         padding: 10% 5% 10% 0;
         grid-template-columns: 30% 70%;
@@ -45,7 +49,6 @@
         
         &:hover {
             box-shadow: 0 0 10px 1px $baseFontColor;
-            // transition: 0.3 ease;
         }
     
     }
@@ -76,5 +79,10 @@
         font-size: $listFontSize;
         font-family: $additionalFont;
         padding: 0 0 0 5px;
+        grid-row: 1/2;
     }
+}
+
+.is_hidden {
+    display: none;
 }
